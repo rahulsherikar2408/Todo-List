@@ -1,0 +1,119 @@
+* {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #202124;
+}
+
+body {
+  background: #eff6ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#root {
+  max-width: 800px;
+  width: 100%;
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  display: flex;
+  align-items: stretch;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+header input {
+  flex: 1;
+  padding: 14px 18px;
+  border: 1px solid #ccc;
+  border-radius: 14px;
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+header input:focus {
+  border-color: #007bff;
+}
+
+header button {
+  padding: 14px 18px;
+  border: none;
+  border-radius: 14px;
+  background: #007bff;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, opacity 0.2s;
+}
+
+header button:hover {
+  background: #0056b3;
+  opacity: 0.8;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+  border-radius: 14px;
+  background: #f8f9fa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: background 0.2s;
+}
+
+.todoItem:hover {
+  background: #e9ecef;
+}
+
+.todoItem p {
+  flex: 1;
+  margin: 0;
+}
+
+.actionsContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.actionsContainer button {
+  padding: 10px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.actionsContainer button:hover {
+  opacity: 0.7;
+}
+
+.actionsContainer button i {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 640px) {
+  header input, header button {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
